@@ -1,0 +1,7 @@
+<h2>Products</h2>
+<mat-form-field appearance="fill">
+    <mat-label>Select</mat-label>
+    <mat-select >
+      <mat-option *ngFor="let product of product"><span class="badge">{{product.brand}}</span> {{product.description}}</mat-option>
+    </mat-select>
+</mat-form-field>
